@@ -1,0 +1,24 @@
+$bg-sidebar: rgb(240,240,240);
+$sidebar-display: rgb(120,131,139);
+// $sidebar-display: lighten($bgcolor, 30%);
+$sidebar-display-hover: darken($sidebar-display, 30%);
+
+#sidebar {
+  // background: $bg-sidebar;
+}
+
+#sidebar-right {
+  // background: $bg-sidebar;
+}
+
+.side-link {
+  text-decoration: none;
+  color: $sidebar-display;
+  &:hover, &:active {
+    text-decoration: none;
+    color: $sidebar-display-hover;
+  }
+  li {
+    list-style: none;
+  }
+}

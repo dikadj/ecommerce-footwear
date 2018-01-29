@@ -1,0 +1,24 @@
+.page-404 {
+  position: relative;
+  top: 150px;
+  color: darken($bgcolor, 40%);
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .page-404 {
+    position: relative;
+    top: 150px;
+    color: darken($bgcolor, 40%);
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-404 {
+    position: relative;
+    top: 150px;
+    color: darken($bgcolor, 40%);
+    font-size: 1.8rem;
+  }
+}

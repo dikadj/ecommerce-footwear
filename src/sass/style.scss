@@ -1,0 +1,23 @@
+@import "color-theme";
+
+@import "navbar";
+
+@import "sidebar";
+
+@import "blog";
+
+@import "page-404";
+
+@import "bottom-nav";
+
+.pt-56px {
+  padding-top: 56px;
+}
+
+.pt-36px {
+  padding-top: 36px;
+}
+
+body {
+  background: $bgpage;
+}

@@ -1,0 +1,33 @@
+// Main Color
+$bgcolor: rgb(30,30,30);
+$bgpage: rgb(240,240,240);
+// $bgcolor: rgb(46,55,62);
+// $bgcolor: rgb(30,49,62);
+// $bgcolor: rgb(18,138,221);
+$displaycolor: #fff;
+$secondbase: rgb(46,55,62);
+
+// Text Colors
+// ==================================
+$h1color: $secondbase;
+// $h1color: darken(adjust-hue($bgcolor, 45deg), 10%);
+$h2color: darken(darken($bgcolor, 30%), 10%);
+$h3color: darken(lighten($h1color, 10%), 10%);
+$h4color: darken(lighten($h2color, 10%), 10%);
+$h5color: darken(desaturate($h3color, 50%), 10%);
+$h6color: darken(desaturate($h4color, 50%), 10%);
+$pcolor: darken(darken($bgcolor, 60%), 10%);
+
+// Text Colors Lighter
+// ===================================
+$h1color-light: darken($bgcolor, 30%);
+$h2color-light: adjust-hue($secondbase, 45deg);
+$h3color-light: lighten($h1color, 10%);
+$h4color-light: lighten($h2color, 10%);
+$h5color-light: desaturate($h3color, 50%);
+$h6color-light: desaturate($h4color, 50%);
+$pcolor-light: darken($bgcolor, 60%);
+
+// Links
+// ====================================
+$h1-link-hover: adjust-hue($h1color, 45deg)
