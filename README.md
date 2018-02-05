@@ -1,4 +1,4 @@
-# My React Starter Config
+# Footwear Ecommerce
 
 This is just a template for a mockup website.
 
