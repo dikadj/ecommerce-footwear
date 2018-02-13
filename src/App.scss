@@ -17,6 +17,16 @@ body {
 	}
 }
 
+@mixin button-link($color, $bg) {
+	text-decoration: none;
+	color: darken($color, 10%);
+	background: transparentize($bg, 0.5);
+	&:hover {
+		color: $color;
+		background: $bg;
+	}
+}
+
 // AppBar
 .appbar {
 	 background: $main-color;
@@ -25,8 +35,8 @@ body {
 .navbar-brand, .menubar {
 	@include link($nav-text, darken($nav-text, 10%));
 }
-.new, .featured {
-	@include link($text-color, darken($text-color, 10%));
+.new, .featured, .social-link {
+	@include link($text-color, lighten($text-color, 15%));
 }
 
 .search {
@@ -39,4 +49,11 @@ body {
 	background: url("https://source.unsplash.com/dkvoEC3vxwU/1200x800") no-repeat;
 	background-size: cover;
 	background-position: center;
+	.newsletter-subscribe {
+		@include button-link($bg-color, $text-color);
+	}
+}
+
+.copyright {
+	background: darken($bg-color, 10%);
 }
