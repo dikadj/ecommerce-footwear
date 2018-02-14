@@ -2,8 +2,8 @@ import React from "react"
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
-import "jquery/dist/jquery.min"
-import "popper.js/dist/popper.min"
+import "jquery"
+import "popper.js"
 import "bootstrap/dist/js/bootstrap.min"
 
 // components
