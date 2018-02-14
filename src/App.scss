@@ -35,10 +35,9 @@ body {
 .navbar-brand, .menubar {
 	@include link($nav-text, darken($nav-text, 10%));
 }
-.new, .featured, .social-link {
-	@include link($text-color, lighten($text-color, 15%));
+.new, .featured {
+	@include link($text-color, lighten($text-color, 10%));
 }
-
 .search {
 	background: #fff;
 }
@@ -52,6 +51,11 @@ body {
 	.newsletter-subscribe {
 		@include button-link($bg-color, $text-color);
 	}
+}
+
+// Footer
+.social-link {
+	@include link(lighten($text-color, 15%), $text-color);
 }
 
 .copyright {

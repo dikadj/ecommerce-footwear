@@ -1,9 +1,9 @@
-import React, { Component } from "react"
+import React from "react"
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
-import "jquery"
-import "popper.js"
+import "jquery/dist/jquery.min"
+import "popper.js/dist/popper.min"
 import "bootstrap/dist/js/bootstrap.min"
 
 // components
@@ -18,15 +18,13 @@ import "./App.scss"
 // normalize.css
 import "normalize.css"
 
-export default class App extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-				<Content />
-				<Newsletter />
-				<Footer />
-			</div>
-		)
-	}
-}
+const App = () => (
+	<div>
+		<Header />
+		<Content />
+		<Newsletter />
+		<Footer />
+	</div>
+)
+
+export default App

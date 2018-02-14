@@ -3,15 +3,16 @@ import products from "../database"
 import Card from "./Card"
 
 const Content = () => (
-	<div className="content container mt-3">
+	<div className="content container my-3">
 		<div className="d-flex flex-wrap justify-content-center">
 			{
 				products.map(p => (
 					<Card
 						key={p.title}
-						cardTitle={p.title}
-						cardImage={p.image}
-						cardDesc={p.desc}
+						title={p.title}
+						image={p.image}
+						desc={p.desc}
+						price={p.price}
 					/>
 				))
 			}

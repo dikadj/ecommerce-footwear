@@ -3,7 +3,7 @@ import React from "react"
 const Newsletter = () => (
 	<div className="newsletter d-flex align-items-center">
 		<div className="newsletter-content container d-flex justify-content-end">
-			<div className="newsletter-caption m-3 col-12 col-sm-6">
+			<div className="newsletter-caption col-12 col-sm-6">
 				<h5 className="text-center">
 					<strong>
 						Don&#39;t miss any latest news.
