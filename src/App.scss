@@ -36,7 +36,7 @@ body {
 	@include link($nav-text, darken($nav-text, 10%));
 }
 .new, .featured {
-	@include link($text-color, lighten($text-color, 10%));
+	@include link($text-color, lighten($text-color, 15%));
 }
 .search {
 	background: #fff;
