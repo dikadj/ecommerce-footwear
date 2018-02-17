@@ -45,7 +45,8 @@ const SubNavbar = () => (
 							</span>
 						}
 						data-toggle="popover"
-						data-trigger="click"
+						data-trigger="focus"
+						tabIndex={0}
 						data-html="true"
 						data-placement="bottom"
 						data-title={`

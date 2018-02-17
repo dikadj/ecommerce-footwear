@@ -34,13 +34,16 @@ export default class TopNavbar extends Component {
 					<Link className="navbar-brand p-3" to="/">
 						Conserve
 					</Link>
-					<Link className="menubar p-3" to="/">
-						<MenuIcon
-							onClick={handleDrawerToggle}
-						/>
+					<Link
+						className="menubar p-3"
+						to="/"
+						onClick={handleDrawerToggle}
+					>
+						<MenuIcon />
 					</Link>
 					<Drawer
 						open={this.state.open}
+						onClose={handleDrawerClose}
 						anchor={window.innerWidth >= 768 ? "right" : "top"}
 					>
 						<div
