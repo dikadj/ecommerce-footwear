@@ -2,9 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
 
 // icons
-import FbIcon from "react-icons/lib/fa/facebook-square"
-import TwitterIcon from "react-icons/lib/fa/twitter-square"
-import LinkedInIcon from "react-icons/lib/fa/linkedin-square"
+import { FaTwitterSquare, FaLinkedin, FaFacebookSquare } from "react-icons/fa"
 
 const Footer = () => (
 	<div className="footer">
@@ -36,13 +34,13 @@ const Footer = () => (
 					<h3>Follow Us on</h3>
 					<div className="h3">
 						<Link className="social-link mr-2" to="/">
-							<FbIcon />
+							<FaFacebookSquare />
 						</Link>
 						<Link className="social-link mr-2" to="/">
-							<TwitterIcon />
+							<FaTwitterSquare />
 						</Link>
 						<Link className="social-link mr-2" to="/">
-							<LinkedInIcon />
+							<FaLinkedin />
 						</Link>
 					</div>
 				</div>

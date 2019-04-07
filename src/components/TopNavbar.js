@@ -1,14 +1,13 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
-import Drawer from "material-ui/Drawer"
-import MenuIcon from "material-ui-icons/Menu"
-import IconButton from "material-ui/IconButton"
-import CloseIcon from "react-icons/lib/md/close"
-import List from "material-ui/List"
-import ListItem from "material-ui/List/ListItem"
-import ListItemIcon from "material-ui/List/ListItemIcon"
-import ListItemText from "material-ui/List/ListItemText"
-import DummyIcon from "react-icons/lib/md/extension"
+import Drawer from "@material-ui/core/Drawer"
+import MenuIcon from "@material-ui/icons/Menu"
+import IconButton from "@material-ui/core/IconButton"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import { MdClose, MdExtension } from "react-icons/md"
 
 export default class TopNavbar extends Component {
 	constructor(props) {
@@ -64,7 +63,7 @@ export default class TopNavbar extends Component {
 										color: "#fff",
 									}}
 								>
-									<CloseIcon />
+									<MdClose />
 								</IconButton>
 							</div>
 						</div>
@@ -75,7 +74,7 @@ export default class TopNavbar extends Component {
 							>
 								<ListItem button>
 									<ListItemIcon>
-										<DummyIcon />
+										<MdExtension />
 									</ListItemIcon>
 									<ListItemText primary="Category 1" />
 								</ListItem>
@@ -86,7 +85,7 @@ export default class TopNavbar extends Component {
 							>
 								<ListItem button>
 									<ListItemIcon>
-										<DummyIcon />
+										<MdExtension />
 									</ListItemIcon>
 									<ListItemText primary="Category 2" />
 								</ListItem>
@@ -97,7 +96,7 @@ export default class TopNavbar extends Component {
 							>
 								<ListItem button>
 									<ListItemIcon>
-										<DummyIcon />
+										<MdExtension />
 									</ListItemIcon>
 									<ListItemText primary="Category 3" />
 								</ListItem>

@@ -1,14 +1,17 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import Button from "material-ui/Button"
-import Tooltip from "material-ui/Tooltip"
-import CardContainer, { CardActions, CardContent, CardMedia } from "material-ui/Card"
-import CartPlusIcon from "react-icons/lib/fa/cart-plus"
+import Button from "@material-ui/core/Button"
+import Tooltip from "@material-ui/core/Tooltip"
+import Card from "@material-ui/core/Card"
+import CardMedia from "@material-ui/core/CardMedia"
+import CardContent from "@material-ui/core/CardContent"
+import CardActions from "@material-ui/core/CardActions"
+import { FaCartPlus } from "react-icons/fa"
 
-export default class Card extends Component {
+export default class CardContainer extends Component {
 	render() {
 		return (
-			<CardContainer className="m-3 col-10 col-sm-5 col-lg-3 col-xl-2 card">
+			<Card className="m-3 col-10 col-sm-5 col-lg-3 col-xl-2 card">
 				<div
 					className="d-flex justify-content-between w-100 p-3 position-absolute row"
 				>
@@ -37,7 +40,7 @@ export default class Card extends Component {
 										color: "rgb(120,120,120)",
 									}}
 								>
-									<CartPlusIcon />
+									<FaCartPlus />
 								</h5>
 							</a>
 						</Tooltip>
@@ -79,7 +82,7 @@ export default class Card extends Component {
 						SHOP
 					</Button>
 				</CardActions>
-			</CardContainer>
+			</Card>
 		)
 	}
 }
@@ -91,9 +94,9 @@ Card.propTypes = {
 	price: PropTypes.string,
 }
 
-Card.defaultProps = {
-	image: "https://source.unsplash.com/Ya3FqJdKVaw/300x200",
-	title: "Night Shower",
-	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-	price: "$50",
-}
+// Card.defaultProps = {
+// 	image: "https://source.unsplash.com/Ya3FqJdKVaw/300x200",
+// 	title: "Night Shower",
+// 	desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+// 	price: "$50",
+// }

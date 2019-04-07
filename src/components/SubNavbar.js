@@ -1,12 +1,12 @@
 import React from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
-import Badge from "material-ui/Badge"
+import Badge from "@material-ui/core/Badge"
 
 // icons
-import SearchIcon from "react-icons/lib/go/search"
-import CartIcon from "react-icons/lib/ti/shopping-cart"
+import { FaSearch } from "react-icons/fa"
+import { TiShoppingCart } from "react-icons/ti"
 
-import $ from "jquery"
+// import $ from "jquery"
 
 import Cart from "./Cart"
 
@@ -24,7 +24,7 @@ const SubNavbar = () => (
 			<div
 				className="px-3"
 			>
-				<SearchIcon className="search-icon small ml-2" />
+				<FaSearch className="search-icon small ml-2" />
 				<a
 					href="#"
 					style={{
@@ -58,7 +58,7 @@ const SubNavbar = () => (
 						`}
 						data-content={Cart(3)}
 					>
-						<CartIcon
+						<TiShoppingCart
 							className="cart-icon ml-2"
 						/>
 					</Badge>
@@ -68,8 +68,8 @@ const SubNavbar = () => (
 	</Router>
 )
 
-$(() => {
-	$("[data-toggle='popover']").popover()
-})
+// $(() => {
+// 	$("[data-toggle='popover']").popover()
+// })
 
 export default SubNavbar
